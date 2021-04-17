@@ -258,8 +258,11 @@ def user_stats(df):
         not_listed = df['Birth Year'].isnull().sum()
         df = df.dropna(axis = 0)
         # With NaN vlaues removed, calculates min, max, and mode.
+        # minimum year value is oldest person
         oldest = int(df['Birth Year'].min())
+        # max year value is youngest  person
         youngest = int(df['Birth Year'].max())
+        # getting the first value of mode will revela the most popular year
         most_common = int(df['Birth Year'].mode()[0])
         print('The oldest renter was born in',oldest)
         print('The youngest renter was born in',youngest)
