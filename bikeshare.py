@@ -98,7 +98,7 @@ def load_data(city, month, day):
 def time_stats(df):
     """
     Displays statistics on the most frequent times of travel, in the local timezone, when applicable
-    
+
     ARGS:
     df - Pandas DataFrame containing city data filtered by month and day
 
@@ -106,7 +106,6 @@ def time_stats(df):
     no data is returne dupon completion of the function
 
     """
-
     # drop frist column of data; seems to be a transaction ID of sorts and this is
     # unneccessary data for what we are looking at. removing it will speed the program up
     df = df.drop(df.columns[0],axis = 1)
@@ -159,7 +158,6 @@ def station_stats(df):
     no data is returned upon completion of the function
 
     """
-
     # drop frist column of data; seems to be a transaction ID of sorts and this is
     # unneccessary data for what we are looking at. removing it will speed the program up
     df = df.drop(df.columns[0],axis = 1)
@@ -194,7 +192,6 @@ def trip_duration_stats(df):
     no data is returned upon completion of the function
 
     """
-
     # drop frist column of data; seems to be a transaction ID of sorts and this is
     # unneccessary data for what we are looking at. removing it will speed the program up
     df = df.drop(df.columns[0],axis = 1)
@@ -233,7 +230,6 @@ def user_stats(df):
     no data is returned upon completion of the function
 
     """
-
     # drop frist column of data; seems to be a transaction ID of sorts and this is
     # unneccessary data for what we are looking at. removing it will speed the program up
     df = df.drop(df.columns[0],axis = 1)
@@ -262,8 +258,11 @@ def user_stats(df):
         not_listed = df['Birth Year'].isnull().sum()
         df = df.dropna(axis = 0)
         # With NaN vlaues removed, calculates min, max, and mode.
+        # minimum year value is oldest person
         oldest = int(df['Birth Year'].min())
+        # max year value is youngest  person
         youngest = int(df['Birth Year'].max())
+        # getting the first value of mode will revela the most popular year
         most_common = int(df['Birth Year'].mode()[0])
         print('The oldest renter was born in',oldest)
         print('The youngest renter was born in',youngest)
