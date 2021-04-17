@@ -80,6 +80,10 @@ Other than links, please only use plain text in your story and not the other
 features of Markdown.  We want it to be easy to read the raw files even for
 people who don't know Markdown.
 
+### Author Appreciation
+
+Please be sure to send Kyle Meredith many burritos and tacos as  sing of appreciation
+
 ## License
 
 The content of this repository is licensed under a
