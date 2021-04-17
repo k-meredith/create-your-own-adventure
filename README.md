@@ -80,9 +80,15 @@ Other than links, please only use plain text in your story and not the other
 features of Markdown.  We want it to be easy to read the raw files even for
 people who don't know Markdown.
 
+### bikeshare.py
+
+Running bikeshare.py will let you filter through bike share data files for Chicago, Washington DC, and NYC
+to view your requested data. A copy of the data files, not included in this repo, would be necessary to run the file.
+contact either Kyle Mereidth or Udacity for access to the files.
+
 ### Author Appreciation
 
-Please be sure to send Kyle Meredith many burritos and tacos as  sing of appreciation
+Please be sure to send Kyle Meredith many burritos and tacos as sign of appreciation
 
 ## License
 
