@@ -83,16 +83,18 @@ people who don't know Markdown.
 ### bikeshare.py
 
 Running bikeshare.py will let you filter through bike share data files for Chicago, Washington DC, and NYC
-to view your requested data. A copy of the data files, not included in this repo, would be necessary to run the file.
+To view your requested data. A copy of the data files, not included in this repo, would be necessary to run the file.
 contact either Kyle Mereidth or Udacity for access to the files.
+
+### adding bikeshare fucntionality
+
+When adding fucntionality to bikeahsre.py, please do so via a function, then calling the function in the main part of the code.
+All functions should have a comment block at the beginning explaining what it does and what the arguments and returned values are
+Create your function as efficeintly as possible, and comment voraciously so everyone can understand what is going on,
 
 ### Author Appreciation
 
 Please be sure to send Kyle Meredith many burritos and tacos as sign of appreciation
-
-### I like turtles
-
-See above.....HE LIKEA THE TURT
 
 ## License
 
